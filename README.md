@@ -12,8 +12,6 @@ A simple webb app visualizing and randoom choosing cocktails recipes.
 -[CocktailsDB API](https://www.thecocktaildb.com/api.php?ref=apilist.fun)
 
 <br>
-<br>
-
 
 ## Screenshots
 
@@ -27,7 +25,7 @@ A simple webb app visualizing and randoom choosing cocktails recipes.
 <br>
 
 
-### Imagiges of Working App
+### Images of Working App
 
 
 

@@ -12,8 +12,9 @@
 /////////////////////
 // CONSTANTS
 /////////////////////
+
 const URL = "https://www.thecocktaildb.com/api/json/v1/1/search.php?s=";
-let getDrinks;
+
 //////////////////////////
 // APP'S STATE (variables)
 //////////////////////////
@@ -22,33 +23,41 @@ let getDrinks;
 // CACHED ELEMENTS REFERNCES
 ////////////////////////////
 
-// const $strDrink = $('#strDrink'); 
-// const $strInstructions = $('strInstructions'); 
-// const $form = $('form'); 
-// const $input = $(`input[type="text"]`); 
-
+const $strDrink = $('#strDrink'); 
+const $strInstructions = $('strInstructions'); 
+const $form = $('form'); 
+const $input = $('input[type="text"]'); 
 ///////////////////
 // EVENT LISTENERS
 ///////////////////
+$form.on('submit', getDrinksData);
+// let drinksData;
 
 /////////////
 // FUNCTIONS
 /////////////
 
-$.ajax("https://www.thecocktaildb.com/api/json/v1/1/search.php?s=")
-.then(function(data) { 
-  myDrinks = data;
-  render()  
-});
+function getDrinksData(event){
+
+      event.preventDefault()
+
+        let userInput = $input.val();
+        if ( userInput === '') return;
+          
+         $.ajax(URL + userInput)
+          .then((data) => { 
+           myDrinks = data;
+          render()  
+            // $('main').append(`<img src="${myDrinks.drinks.strDrinkThumb}" />`);
+      });
+}
 
 //.
 function render() {
-  console.log(myDrinks);
-
-  const html = myDrinks.map(function(drinks) {
-        return 
-    });
-  }
+    $strDrink.text(myDrinks.strDrink);
+    $strInstructions.text(myDrinks.strInstructions);
+    console.log(myDrinks);  
+  };
 
 
 
