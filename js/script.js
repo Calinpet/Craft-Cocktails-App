@@ -6,7 +6,7 @@
 
 // 1) Page Loads - Fetch data from TheCocktailDB API
 // 2) Store resulting data in a list (Array) so we can loop over and create the UI
-// 3) Using the data ti create UI and append to the DOM
+// 3) Using the data to create UI and append to the DOM
 
 
 /////////////////////
@@ -24,7 +24,7 @@ const URL = "https://www.thecocktaildb.com/api/json/v1/1/search.php?s=";
 ////////////////////////////
 
 const $strDrink = $('#strDrink'); 
-const $strInstructions = $('strInstructions'); 
+const $strInstructions = $('#strInstructions'); 
 const $form = $('form'); 
 const $input = $('input[type="text"]'); 
 ///////////////////
@@ -43,20 +43,19 @@ function getDrinksData(event){
 
         let userInput = $input.val();
         if ( userInput === '') return;
-          
+
          $.ajax(URL + userInput)
           .then((data) => { 
-           myDrinks = data;
-          render()  
-            // $('main').append(`<img src="${myDrinks.drinks.strDrinkThumb}" />`);
-      });
+           let myDrinks = data;
+          render(myDrinks)  
+      }
+    );
 }
-
-//.
-function render() {
-    $strDrink.text(myDrinks.strDrink);
-    $strInstructions.text(myDrinks.strInstructions);
-    console.log(myDrinks);  
+  function render(myDrinks) {
+      $strDrink.text(myDrinks.drinks[0].strDrink);
+      $strInstructions.text(myDrinks.drinks[0].strInstructions);
+      $('main').append(`<img src="${myDrinks.drinks[0].strDrinkThumb}"/>`)
+      console.log(myDrinks);  
   };
 
 
