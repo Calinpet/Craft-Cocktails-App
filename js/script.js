@@ -30,13 +30,14 @@ const $input = $('input[type="text"]');
 ///////////////////
 // EVENT LISTENERS
 ///////////////////
+// event listener to call data when user clicks the submit button
 $form.on('submit', getDrinksData);
 // let drinksData;
 
 /////////////
 // FUNCTIONS
 /////////////
-
+// this fuction will get data from the API
 function getDrinksData(event){
 
       event.preventDefault()
@@ -51,6 +52,7 @@ function getDrinksData(event){
       }
     );
 }
+// The rendering function
   function render(myDrinks) {
       $strDrink.text(myDrinks.drinks[0].strDrink);
       $strInstructions.text(myDrinks.drinks[0].strInstructions);

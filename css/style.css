@@ -12,6 +12,7 @@ body {
   background-color: rgba(0,0,0, 0.5);
   background-size:100% 100%;
   background-repeat: no-repeat;
+  a
 } 
 
 
@@ -58,13 +59,14 @@ main {
 }
 
 input[type=text] {
-  width: 130px;
+  width: 150px;
+  height: 4px;
   box-sizing: border-box;
   border: 2px solid #ccc;
   border-radius: 4px;
-  font-size: 16px;
+  font-size: 14px;
   background-color: white;
-  background-image: url('searchicon.png');
+  /* background-image: url('searchicon.png'); */
   background-position: 10px 10px; 
   background-repeat: no-repeat;
   padding: 12px 20px 12px 40px;
@@ -76,4 +78,14 @@ input[type=text]:focus {
 
 form placeholder {
 
+}
+
+#picture {
+  max-width: 400px;
+  max-height: 700px;
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  width: 50%;
 }
