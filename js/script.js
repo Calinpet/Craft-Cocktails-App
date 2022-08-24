@@ -54,11 +54,12 @@ function getDrinksData(event){
   function render(myDrinks) {
       $strDrink.text(myDrinks.drinks[0].strDrink);
       $strInstructions.text(myDrinks.drinks[0].strInstructions);
-      $('main').append(`<img src="${myDrinks.drinks[0].strDrinkThumb}"/>`)
+      document.getElementById("picture").src = myDrinks.drinks[0].strDrinkThumb;
       console.log(myDrinks);  
   };
 
-
+// remove imgs when select another drink
+// $('main').append(`<img src="${myDrinks.drinks[0].strDrinkThumb}"/>`)
 
 
 
