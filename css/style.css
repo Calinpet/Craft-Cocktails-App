@@ -110,6 +110,7 @@ p{
   margin-right: auto;
   margin-top: 50px;
   width: 50%;
+  border-radius: 10px;
 }
   
 @media screen {
