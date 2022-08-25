@@ -22,7 +22,7 @@ const URL = "https://www.thecocktaildb.com/api/json/v1/1/search.php?s=";
 ////////////////////////////
 // CACHED ELEMENTS REFERNCES
 ////////////////////////////
-
+// instantiate the variables
 const $strDrink = $('#strDrink'); 
 const $strInstructions = $('#strInstructions'); 
 const $form = $('form'); 
@@ -39,12 +39,12 @@ $form.on('submit', getDrinksData);
 /////////////
 // this fuction will get data from the API
 function getDrinksData(event){
-
+// adding event.preventDefault to prevent the page from reloading
       event.preventDefault()
-
+// user is equal to input
         let userInput = $input.val();
         if ( userInput === '') return;
-
+// setting myDrinks equal to the result data
          $.ajax(URL + userInput)
           .then((data) => { 
            let myDrinks = data;
@@ -52,7 +52,7 @@ function getDrinksData(event){
       }
     );
 }
-// The rendering function
+// The rendering function with myDrinks parameters
   function render(myDrinks) {
       $strDrink.text(myDrinks.drinks[0].strDrink);
       $strInstructions.text(myDrinks.drinks[0].strInstructions);
@@ -60,8 +60,7 @@ function getDrinksData(event){
       console.log(myDrinks);  
   };
 
-// remove imgs when select another drink
-// $('main').append(`<img src="${myDrinks.drinks[0].strDrinkThumb}"/>`)
+// Reached MVP
 
 
 
