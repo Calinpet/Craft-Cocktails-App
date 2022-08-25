@@ -22,7 +22,7 @@ footer {
   margin: auto;
   width: 50%;
 } 
-
+/* Creating a sticky footer */
 main {
   flex-grow: 1;
 }
@@ -35,6 +35,7 @@ main {
   justify-content: space-around;
   align-items: center;
   min-height: 8vh;
+  
 } 
 
 /* Style the links inside the navigation bar */
@@ -76,6 +77,29 @@ input[type=text] {
 }
 input[type=text]:focus {
   width: 40%;
+}
+
+h3 {
+  padding: 10px;
+}
+
+p{
+  padding: 10px;
+  font-size: 120%;
+}
+
+#strDrink {
+  display: block;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#strInstructions {
+  display: block;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #picture {

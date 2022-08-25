@@ -22,8 +22,18 @@ A simple webb app visualizing and randoom choosing cocktails recipes.
 ![screenshot](imgs/Wireframe.png)
 
 <br>
+
+### Planing
+-Trello
+![screenshot](imgs/Trello Planning.png)
+
 <br>
 
+## Features
+Users can search through a data base to retrieve cocktails recepis
+
+## Design
+-Design elements impletented using HTML5 and CSS
 
 ### Images of Working App
 ![screenshot](imgs/Screenshot_Working_app.png)
@@ -35,5 +45,5 @@ A simple webb app visualizing and randoom choosing cocktails recipes.
 
 ## Future Enhancements
 -Routing
--
--
+-Users will be able to rate the cocktails they like
+-Users can add cocktails
