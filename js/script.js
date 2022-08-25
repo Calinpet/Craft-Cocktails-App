@@ -27,12 +27,12 @@ const $strDrink = $('#strDrink');
 const $strInstructions = $('#strInstructions'); 
 const $form = $('form'); 
 const $input = $('input[type="text"]'); 
+
 ///////////////////
 // EVENT LISTENERS
 ///////////////////
 // event listener to call data when user clicks the submit button
 $form.on('submit', getDrinksData);
-// let drinksData;
 
 /////////////
 // FUNCTIONS

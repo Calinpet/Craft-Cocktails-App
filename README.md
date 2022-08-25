@@ -1,6 +1,6 @@
 # Craft-Cocktails-App
 
-A simple webb app visualizing and randoom choosing cocktails recipes.
+A simple webb app visualizing and random choosing cocktails recipes.
 
 ## Technologies
 - HTML5
@@ -18,7 +18,7 @@ Trello
 ![screenshot](imgs/Trello_Planning.png)
 
 ## Features
-Users can search through a data base to retrieve cocktails recepis
+Users can search through a data base to retrieve cocktails recipes.
 
 ## Design
 - Design elements impletented using HTML5 and CSS
