@@ -26,7 +26,7 @@ A simple webb app visualizing and randoom choosing cocktails recipes.
 
 
 ### Images of Working App
-
+![Screenshot](imgs/Screen Shot 2022-08-25 at 11.18.22 AM.png)
 
 
 ### Getting Started
