@@ -28,7 +28,7 @@ Users can search through a data base to retrieve cocktails recipes.
 
 
 ### Getting Started
-[Click here](#) to see working app
+[Click here](https://calinpet.github.io/Craft-Cocktails-App/) to see working app
 
 
 ## Future Enhancements
